@@ -21,7 +21,7 @@ public class Score {
 		id.setMovie(movie);
 	}
 	
-	public void serUser(User user) {  //LIGAR O USER AO SCORE//
+	public void setUser(User user) {  //LIGAR O USER AO SCORE//
 		id.setUser(user);
 	}
 

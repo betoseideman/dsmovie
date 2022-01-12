@@ -8,13 +8,13 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.devsuperior.dsmovie.dto.MovieDTO;
 import com.devsuperior.dsmovie.entities.Movie;
-import com.devsuperior.dsmovie.repositories.MovieRepositository;
+import com.devsuperior.dsmovie.repositories.MovieRepository;
 
 @Service // REGISTRAR COMO COMPONENTE DO SISTEMA//
 public class MovieService {
 
 	@Autowired // INSTANCIA AUTOMATICAMENTE //
-	private MovieRepositository repository;
+	private MovieRepository repository;
 
 	@Transactional(readOnly = true) // METODO DE TRANSACAO SÓ LEITURA//
 	public Page<MovieDTO> findAll(Pageable pageable) {
